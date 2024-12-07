@@ -44,5 +44,5 @@ const db = supabase.createClient(
     });
 })();
 
-https://maneedasshrestha.github.io/Bhakta-Tour/add_page.html
-https://maneedasshrestha.github.io/Bhakta-Tour/add_page.html
+// https://maneedasshrestha.github.io/Bhakta-Tour/add_page.html
+// https://maneedasshrestha.github.io/Bhakta-Tour/add_page.html

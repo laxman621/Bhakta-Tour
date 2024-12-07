@@ -29,7 +29,7 @@ const db = supabase.createClient('https://ucltnbpxulzkyuceesmd.supabase.co', 'ey
 const qrCanvas = document.getElementById('qr-code');
 const currentURL = window.location.href;
 
-const requiredURl="https://maneedasshrestha.github.io/Bhakta_Tour/edit_page.html?id="+result.id
+const requiredURl="https://maneedasshrestha.github.io/Bhakta_Tour/attraction.html?id="+result.id
 console.log(requiredURl)
 
 // Generate QR code for the current URL

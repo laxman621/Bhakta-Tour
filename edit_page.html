@@ -58,6 +58,21 @@
             font-size: 1em;
             transition: border-color 0.3s ease;
         }
+        .button{
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #ddd;
+            border: none;
+            color: white;
+            font-weight: 600;
+            cursor: pointer;
+            margin: auto;
+            width: 150px;
+            transition: 0.5s ease;
+        }
+        .button:hover{
+            background-color: #501C0D;
+        }
 
         input:focus,
         textarea:focus {
@@ -162,21 +177,22 @@
                 <div class="qr-container">
                     <canvas id="qr-code"></canvas>
                     <div class="buttons">
-                        <button onclick="downloadQR()">Download QR Code</button>
-                        <button onclick="shareURL()">Share URL</button>
+                        <button class="button" onclick="downloadQR()">Download QR Code</button>
+                        <button class="button" onclick="shareURL()">Share URL</button>
                     </div>
                 </div>
             </div>
 
             <div class="form-group">
-                <button type="submit" class="submit-btn" id="submit-btn" ><a href="admin_dashboard.html" style="text-decoration: none; color: white; font-weight: 600;">Save Changes</a></button>
+                <button type="submit" class="submit-btn" id="submit-btn" onclick="window.location.href='admin_dashboard.html'" ><a href="admin_dashboard.html" style="text-decoration: none; color: white; font-weight: 600;">Save Changes</a></button>
             </div>
         </form>
     </div>
+    <script type="module" src="edit_values.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
 
     <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
-    <script type="module" src="edit_values.js"></script>
     <script>
         const imageUrlInput = document.getElementById('image-url');
         const imagePreview = document.getElementById('image-preview');

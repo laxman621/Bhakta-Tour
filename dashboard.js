@@ -28,8 +28,7 @@ const db = supabase.createClient(
     data.forEach(item => {
         const listItem = document.createElement('div');
         listItem.className = 'post-ittems'; // Add a class for styling
-        const redirect = ` https://maneedasshrestha.github.io/Bhakta_Tour/edit_page.html?id=${item.id}`;
-        https://maneedasshrestha.github.io/Bhakta-Tour/edit_page.html?id=19
+        const redirect = `https://maneedasshrestha.github.io/Bhakta-Tour/edit_page.html?id=${item.id}`;
         
         // Create inline content
         listItem.innerHTML = `
@@ -43,6 +42,6 @@ const db = supabase.createClient(
         container.appendChild(listItem);
     });
 })();
-
+// https://maneedasshrestha.github.io/Bhakta-Tour/edit_page.html?id=38
 // https://maneedasshrestha.github.io/Bhakta-Tour/add_page.html
 // https://maneedasshrestha.github.io/Bhakta-Tour/add_page.html
